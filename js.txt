@@ -1,0 +1,37 @@
+URL https://unpkg.com/swiper@8/swiper-bundle.min.js adalah sebuah link yang merujuk pada file JavaScript dengan nama swiper-bundle.min.js 
+pada package swiper versi 8 yang disimpan di platform package hosting unpkg.com.
+
+Swiper sendiri merupakan sebuah library JavaScript open source yang berfungsi untuk membuat tampilan slideshow (slider) yang interaktif 
+dan responsif pada website atau aplikasi web. Dalam file swiper-bundle.min.js tersebut, terdapat kode-kode JavaScript yang 
+mengimplementasikan berbagai fitur dan fungsionalitas dari library Swiper.
+
+Dengan menggunakan Swiper, developer dapat memudahkan pembuatan tampilan slideshow pada website 
+atau aplikasi web dengan berbagai konfigurasi dan pilihan tema yang disediakan. File swiper-bundle.min.js 
+sendiri telah di-compile dan dikompresi sehingga memiliki ukuran file yang lebih kecil dan lebih efisien untuk digunakan pada website atau aplikasi web.
+
+
+
+Swiper adalah library JavaScript untuk membuat slider dan carousel yang interaktif. 
+Berikut ini adalah beberapa perintah yang tersedia di versi 8.4.7 dari Swiper:
+
+new Swiper(container, options): Untuk membuat instance baru dari Swiper, dengan container sebagai selector dari elemen yang akan dijadikan container Swiper, dan options sebagai objek konfigurasi.
+
+swiper.slideNext(): Untuk memindahkan slide ke slide berikutnya.
+
+swiper.slidePrev(): Untuk memindahkan slide ke slide sebelumnya.
+
+swiper.slideTo(index, speed, runCallbacks): Untuk memindahkan slide ke slide dengan index tertentu, dengan speed sebagai durasi animasi dalam milidetik, dan runCallbacks sebagai flag untuk menjalankan callback pada saat slide berubah.
+
+swiper.autoplay.start(): Untuk memulai autoplay pada Swiper.
+
+swiper.autoplay.stop(): Untuk menghentikan autoplay pada Swiper.
+
+swiper.update(): Untuk memperbarui ukuran Swiper, misalnya jika container diubah ukurannya.
+
+swiper.destroy(): Untuk menghapus Swiper instance dan melepaskan event listener.
+
+swiper.on(event, handler): Untuk menambahkan event listener pada Swiper, dengan event sebagai string nama event dan handler sebagai function yang akan dijalankan saat event terjadi.
+
+swiper.off(event, handler): Untuk menghapus event listener pada Swiper.
+
+Itu hanya beberapa perintah yang tersedia di Swiper, masih ada banyak perintah lainnya yang dapat digunakan untuk mengkonfigurasi dan mengontrol Swiper.
