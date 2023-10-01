@@ -1,0 +1,26 @@
+Script tersebut adalah kode JavaScript yang digunakan untuk mengontrol tampilan dan perilaku beberapa elemen HTML pada halaman web. 
+Berikut adalah penjelasan dari setiap baris kode tersebut:
+
+- let navbar = document.querySelector('.header .flex .navbar');
+Mendefinisikan variabel navbar yang merepresentasikan elemen HTML dengan class navbar yang berada di dalam elemen HTML dengan class header dan flex.
+
+- let profile = document.querySelector('.header .flex .profile');
+Mendefinisikan variabel profile yang merepresentasikan elemen HTML dengan class profile yang berada di dalam elemen HTML dengan class header dan flex.
+
+- document.querySelector('#menu-btn').onclick = () =>{ navbar.classList.toggle('active'); profile.classList.remove('active'); }
+Menambahkan event listener pada elemen HTML dengan id menu-btn yang akan melakukan toggle class active pada elemen navbar dan menghapus class active pada elemen profile saat elemen tersebut di klik.
+
+- document.querySelector('#user-btn').onclick = () =>{ profile.classList.toggle('active'); navbar.classList.remove('active'); }
+Menambahkan event listener pada elemen HTML dengan id user-btn yang akan melakukan toggle class active pada elemen profile dan menghapus class active pada elemen navbar saat elemen tersebut di klik.
+
+- window.onscroll = () =>{ navbar.classList.remove('active'); profile.classList.remove('active'); }
+Menambahkan event listener pada saat terjadinya scroll pada halaman, yang akan menghapus class active pada elemen navbar dan profile.
+
+- let mainImage = document.querySelector('.update-product .image-container .main-image img');
+Mendefinisikan variabel mainImage yang merepresentasikan elemen HTML <img> yang berada di dalam elemen HTML dengan class .update-product, .image-container, dan .main-image.
+
+- let subImages = document.querySelectorAll('.update-product .image-container .sub-image img');
+Mendefinisikan variabel subImages yang merupakan kumpulan elemen HTML <img> yang berada di dalam elemen HTML dengan class .update-product, .image-container, dan .sub-image.
+
+- subImages.forEach(images =>{ images.onclick = () =>{ src = images.getAttribute('src'); mainImage.src = src; } });
+Menambahkan event listener pada setiap elemen HTML <img> pada variabel subImages yang akan mengganti sumber gambar (src) pada elemen mainImage saat elemen tersebut di klik.

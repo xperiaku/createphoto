@@ -1,0 +1,144 @@
+/* Style untuk filter date */
+table input[type="date"] {
+  padding: 6px 7px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-right: 6px;
+}
+  
+  /* Style untuk filter button */
+table input[type="submit"].btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+ table input[type="submit"].btn:hover {
+    background-color: #6bbbf0;;
+  }
+  
+  /* Style untuk tabel report */
+  .report .table_order {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .report .table_order thead {
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .report .table_order th,
+  .table_order td {
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .report .table_order tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .report .table_order tr:hover {
+    background-color: #ddd;
+  }
+  
+
+
+  /* Style untuk tabel pesan */
+  .pesan .table_order {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .pesan .table_order thead {
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .pesan .table_order th{
+    padding: 1.5rem;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  .table_order td {
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .pesan .table_order tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .pesan .table_order tr:hover {
+    background-color: #ddd;
+  }
+
+  .print {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .print-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .print-btn:hover {
+    background-color:#6bbbf0;
+  }
+  
+  .print-btn:active {
+    background-color: #6bbbf0;
+  }
+  
+  @media print {
+    .print {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .report .table_order td:nth-of-type(1),
+    .report .table_order th:nth-of-type(1),
+
+    .pesan .table_order td:nth-of-type(1),
+    .pesan .table_order th:nth-of-type(1),
+    .pesan .table_order td:nth-of-type(2),
+    .pesan .table_order th:nth-of-type(2),
+    .pesan .table_order td:nth-of-type(6),
+    .pesan .table_order th:nth-of-type(6) {
+    display: none;
+    }
+    }
+
+    
